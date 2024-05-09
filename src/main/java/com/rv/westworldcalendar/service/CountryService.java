@@ -1,12 +1,11 @@
 package com.rv.westworldcalendar.service;
 
-import com.rv.westworldcalendar.enitity.Country;
+import com.rv.westworldcalendar.entity.Country;
 import com.rv.westworldcalendar.repository.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CountryService {

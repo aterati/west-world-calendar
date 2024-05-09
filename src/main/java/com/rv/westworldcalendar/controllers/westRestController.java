@@ -1,17 +1,14 @@
 package com.rv.westworldcalendar.controllers;
 
-import com.rv.westworldcalendar.enitity.Country;
-import com.rv.westworldcalendar.enitity.Holiday;
+import com.rv.westworldcalendar.entity.Country;
+import com.rv.westworldcalendar.entity.Holiday;
 import com.rv.westworldcalendar.service.CountryService;
 import com.rv.westworldcalendar.service.HolidayService;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 public class westRestController {
@@ -29,11 +26,18 @@ public class westRestController {
 
     }
 
-    @PostMapping("/addCountry")
-    public ResponseEntity<String> addCountry(@RequestBody Country country){
+    @GetMapping("/getCountry/{id}")
+    public ResponseEntity<Country> getCountry(@PathVariable Integer id){
 
-        countryService.addCountry(country);
-        return ResponseEntity.ok("Saved Country successfully.");
+        return ResponseEntity.ok(countryService.getCountry(id));
+
+    }
+
+    @PostMapping("/addCountry")
+    public ResponseEntity<Country> addCountry(@RequestBody Country country){
+
+        return ResponseEntity.ok(countryService.addCountry(country));
+
     }
 
     @GetMapping("/getHolidays")
@@ -43,11 +47,18 @@ public class westRestController {
 
     }
 
-    @PostMapping("/addHoliday")
-    public ResponseEntity<String> addHoliday(@RequestBody Holiday holiday){
+    @GetMapping("/getHoliday/{id}")
+    public ResponseEntity<Holiday> getHoliday(@PathVariable Integer id){
 
-        holidayService.addHoliday(holiday);
-        return ResponseEntity.ok("Saved Country successfully.");
+        return ResponseEntity.ok(holidayService.getHoliday(id));
+
+    }
+
+    @PostMapping("/addHoliday")
+    public ResponseEntity<Holiday> addHoliday(@RequestBody Holiday holiday){
+
+        return ResponseEntity.ok(holidayService.addHoliday(holiday));
+
     }
 
     @PutMapping("/updateCountry/{id}")
@@ -83,6 +94,5 @@ public class westRestController {
         }
         return ResponseEntity.ok("Holiday updated successfully.");
     }
-
 
 }

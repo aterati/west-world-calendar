@@ -1,8 +1,6 @@
 package com.rv.westworldcalendar.service;
 
-import com.rv.westworldcalendar.enitity.Country;
-import com.rv.westworldcalendar.enitity.Holiday;
-import com.rv.westworldcalendar.repository.CountryRepository;
+import com.rv.westworldcalendar.entity.Holiday;
 import com.rv.westworldcalendar.repository.HolidayRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
