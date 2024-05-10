@@ -1,4 +1,4 @@
-[west-world-calendar.postman_collection.json](https://github.com/aterati/west-world-calendar/files/15271888/west-world-calendar.postman_collection.json)# West World Calendar API
+# West World Calendar API
 This is a Rest API developed using Spring boot, H2 database. We can add, edit and view list of countries and holidays under each country.
 
 ## Technical Details:
@@ -17,4 +17,4 @@ This is a Rest API developed using Spring boot, H2 database. We can add, edit an
 
 ## Postman collection:
 
-Please use the postman collections found at - https://github.com/aterati/west-world-calendar/issues/1
+Please use the postman collections found at - [west-world-calendar.postman_collection.json](https://github.com/aterati/west-world-calendar/files/15271888/west-world-calendar.postman_collection.json)
