@@ -12,9 +12,10 @@ This is a Rest API developed using Spring boot, H2 database. We can add, edit an
 
   We are using H2 db to save the data. We can login to H2-console during runtime at - http://localhost:8090/h2-console
 	
-	Swagger link to check the contracts - http://localhost:8090/swagger-ui/index.html
+  Swagger link to check the contracts - http://localhost:8090/swagger-ui/index.html
  
 
 ## Postman collection:
 
+Please use the postman collections found at - https://github.com/aterati/west-world-calendar/issues/1
 
