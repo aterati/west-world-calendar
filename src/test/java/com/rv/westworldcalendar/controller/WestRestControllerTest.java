@@ -1,4 +1,4 @@
-package com.rv.westworldcalendar.service;
+package com.rv.westworldcalendar.controller;
 
 import com.rv.westworldcalendar.entity.Country;
 import com.rv.westworldcalendar.repository.CountryRepository;
